@@ -23,7 +23,7 @@
             Previous
           </button>
         </div>
-        <!-- show off the next page to segue to writing the fn in the service  -->
+
         <div class="col-6">
           <button
             @click="changePage(nextPage)"
@@ -47,11 +47,9 @@
             justify-content-around
           "
         >
-          <!-- make sure not to put this at first..... show off elvis operator -->
           <h1 class="text-uppercase">{{ activePokemon?.name }}</h1>
           <img class="h-50" :src="activePokemon?.img" alt="" />
           <div>
-            <!-- do activePokemon.types to show how it draws the array weird, then show off the v-for -->
             <p class="fs-3">
               Height: {{ activePokemon?.height }} | Weight:
               {{ activePokemon?.weight }} | Types:
